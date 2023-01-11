@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>MasterChef</title>
+</head>
+<body>
+    <!-- Main idea -->
+    <div>
+        <h1>МастерШеф: Битва сезонів</h1>
+    </div>
+    <!--About masterchef  -->
+    <div class="main">
+        <div class="main-info">
+            <h5>Найкращі кулінари всіх часів готові довести, що вони варті перемоги</h5>
+            <p>
+                <img src="img/img2.jpg" class="photo1" width="250" height="250">
+                Вже дванадцять сезонів поспіль проєкт СТБ Мастер Шеф не лише відкриває нові імена у світі української кулінарії, а й
+                змінює культуру харчування українців. На кухні проєкту знаходиться місце для досвідчених професіоналів і звичайних
+                аматорів, які можуть пройти навчання та набратися досвіду в найкращих кулінарів світу. У кожному сезоні був лише один
+                переможець, проте серед учасників були ті, хто вважали, що саме вони варті найвищої нагороди. Саме тому у проєкті Мастер
+                Шеф. Битва сезонів найяскравіші, найцікавіші та найталановитіші учасники попередніх років схрестять ножі в грандіозній
+                битві за кулінарну першість. Хто отримає перемогу цього разу?
+            </p>
+            <h5>Грандіозна битва сезонів</h5>
+            <p>
+                Цієї зими на головну кухню країни повернеться переможець сьомого сезону Мастер Шеф Пава (Вадим Бжезинський). Під час
+                <img src="img/img7.jpg" class="photo2" width="250" height="300">
+                участі у проєкті він підкорив серця глядачів оригінальними стравами, а також запам’ятався своїм коронним «курлик».
+                Катерина Велика вийшла у фінал у 5 сезоні, проте поступилася переможним місцем Євгену Клопотенку. У проєкті Мастер Шеф.
+                Битва сезонів вона має намір довести, що гідна опиниться на вершині кулінарного Олімпу. Паша Серветник став переможцем у
+                першому сезоні Мастер Шеф. Професіонали. До повернення на головну кухню країни він серйозно підготувався, адже свій
+                виграш потратив на стажування по всьому світу.
+                Битва сезонів буде захопливою та цікавою. Хочете дізнатися, які випробування доведеться подолати учасникам? Хто з них
+                вразить вимогливих суддів новими вміннями? Дивіться онлайн прем’єру-реванш Мастер Шеф.
+            </p>
+            <img src="img/img6.jpg" class="photo3" width="300" height="300">
+        </div>
+        <!--Sidebar-->
+        <div class="sidebar">
+            <img src="img/img1.jpg" class="photo" id="pic1">
+            <img src="img/img4.jpg" class="photo" id="pic2">
+            <img src="img/img3.jpg" class="photo" id="pic3">
+        </div>
+    </div>
+    <!--Forms-->
+    <nav class="forms-nav">
+        <a class="forms-nav-a" href="#registration-form">Форма реєстрації</a>
+        <a class="forms-nav-a" href="#sign-in-form">Форма входу</a>
+        <a class="forms-nav-a" href="#feedback-form">Форма зворотрього зв'язку</a>
+    </nav>
+    <section class="forms">
+        <!--sign-in-form-->
+        <form id="sign-in-form">
+            <h3>Форма входу</h3>
+        
+            <div>
+                <label for="login">Логін</label>
+                <input class="input-block" type="text" name="login" placeholder="Логін" autocomplete="on" required>
+            </div>
+        
+            <div>
+                <label for="password">Пароль</label>
+                <input class="input-block" type="password" name="password" minlength="4" placeholder="Ваш пароль" required>
+            </div>
+        
+            <button type="submit" name="submit">Вхід</button>
+        </form>
+        <!--registration-form-->
+        <form name="registration" id="registration-form">
+            <h3>Форма реєстрації</h3>
+            <div class="registration-part">
+                <img src="img/img5.jpg" width="100" height="100">
+                
+                <label for="name">Ім'я</label>
+                <input class="input-block" type="text" name="name" placeholder="Ім'я" autocomplete="on" required>
+                
+                <label for="surname">Прізвище</label>
+                <input class="input-block" type="text" name="surname" placeholder="Прізвище" autocomplete="on" required>
+                
+                <fieldset>
+                    <legend>Оберіть стать</legend>
+        
+                    <input type="radio" id="radio1" name="sex" value="w" checked>
+                    <label for="radio1">Жінка</label> 
+        
+                    <input type="radio" id="radio2" name="sex" value="m">
+                    <label for="radio2">Чоловік</label>
+        
+                    <input type="radio" id="radio3" name="sex" value="o">
+                    <label for="radio3">Інше</label>
+                </fieldset>
+               
+
+                <label for="age">Вік</label>
+                <input class="input-block" type="number" name="age" placeholder="Скільки вам років?" autocomplete="on" required
+                min="0" max="122">
+                
+            </div>
+        
+            <div class="registration-part">
+
+                <div class="registration-form-block">
+                    <label for="birth">Дата народження</label>
+                    <input class="input-block" type="date" name="birth" id="birth" min="1900-01-01" max="2022-01-01" value="2000-01-01" required>
+                </div>
+        
+                <div class="registration-form-block">
+                    <label for="city">Місто проживання</label>
+                    <select class="input-block" name="city">
+                        <option value="value1" selected>Київ</option>
+                        <option value="value2">Харків</option>
+                        <option value="value3">Одеса</option>
+                        <option value="value4">Львів</option>
+                        <option value="value5">Полтава</option>
+                    </select>
+                </div>
+        
+                <div class="registration-form-block">
+                    <label for="telephone">Номер телефону</label>
+                    <input class="input-block" type="telephone" name="telephone" pattern="+380-[0-9]{3}-[0-9]{4}" maxlength="7"
+                        placeholder="(+380)-XXX-XXXX" autocomplete="on" required>
+                </div>
+        
+                <div class="registration-form-block">
+                    <label for="social-media">Соцмережа</label>
+                    <input class="input-block" type="url" name="social-media" placeholder="t.me/..." required>
+                </div>
+        
+                <div class="registration-form-block">
+                    <label for="email">Електрона пошта</label>
+                    <input class="input-block" type="email" name="email" placeholder="Ваша електрона пошта"
+                        pattern="[a-z0-9._-]+@[a-z.-]+\.[a-z]{2,}$" autocomplete="on" required>
+                </div>
+        
+                <div class="registration-form-block">
+                    <label for="password-registration">Пароль</label>
+                    <input class="input-block" type="password" name="password-registration" minlength="4"
+                        placeholder="Ваш пароль" required>
+                </div>
+        
+                <div class="registration-form-block">
+                    <p class="form-text">Чи згідні Ви з умовами?</p>
+                    <input type="checkbox" name="check" required>
+                </div>
+                
+                <button type="reset" name="reset">Відміна</button>
+                <button type="submit" name="submit">Зареєструватися</button>
+            </div>
+        </form>
+        <!--feedback-form-->
+        <form id="feedback-form">
+            <div>
+                <h3>Форма зворотнього зв'язку</h3>
+        
+                <input class="input-block" type="text" name="name-feedback" placeholder="Ім'я" autocomplete="on" required>
+        
+                <input class="input-block" type="email" name="email-feedback" placeholder="Ел. пошта"
+                    pattern="[a-z0-9._-]+@[a-z.-]+\.[a-z]{2,}$" autocomplete="on" required>
+        
+                <input class="input-block" list="feedback-topics" name="feedback-topic" placeholder="Тема" required>
+                <datalist id="feedback-topics">
+                    <option value="Запитання з приводу участі">
+                    <option value="Щось не працює">
+                    <option value="Побажання">
+                    <option value="Інше">
+                </datalist>
+        
+                <button type="submit" name="submit-feedback">Відправити</button>
+            </div>
+        
+            <div>
+                <textarea rows="15" cols="60" name="feedback-text" placeholder="Ваш текст.." required></textarea>
+            </div>
+        </form>
+    </section>
+    <!--link-->
+    <footer>
+        <h3>Посилання на соц.мережі</h3>
+        <div id="footer-links">
+            <a href="mailto:ivakhnenko.yuliia@lll.kpi.ua" target="_blank">
+                <img src="img/gmail.png" class="footer-logo">
+            </a>
+            <a href="https://t.me/itistheunknown" target="_blank">
+                <img src="img/Telegram.webp" class="footer-logo">
+            </a>
+            <a href="https://www.instagram.com/_it_is_the_unknown_/" target="_blank">
+                <img src="img/Instagram.png" class="footer-logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
